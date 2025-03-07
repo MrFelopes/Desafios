@@ -1,4 +1,4 @@
-const apiBaseUrl = "https://localhost:7082/api/endereco";
+const apiBaseUrl = "https://localhost:7082/api/endereco"; //Caso necessário, alterar para a porta designada da API
 
 async function buscarEndereco() {
     const cep = document.getElementById("cep").value;
