@@ -10,9 +10,9 @@ async function buscarEndereco() {
     const response = await fetch(`${apiBaseUrl}/buscar/${cep}`, {
         method: 'GET',
         headers: {
-            'Content-Type': 'application/json'  // Especificando que o conteúdo da requisição é JSON
+            'Content-Type': 'application/json' 
         },
-        credentials: 'include'  // Adicionando credenciais, caso necessário
+        credentials: 'include'  
     });
     const data = await response.json();
 
@@ -28,9 +28,9 @@ async function listarEnderecos(ordenarPor = "", ordem = "asc") {
     const response = await fetch(`${apiBaseUrl}/listar?ordenarPor=${ordenarPor}&ordem=${ordem}`, {
         method: 'GET',
         headers: {
-            'Content-Type': 'application/json'  // Adicionando cabeçalhos aqui também
+            'Content-Type': 'application/json'  
         },
-        credentials: 'include'  // Adicionando credenciais aqui também
+        credentials: 'include' 
     });
     const enderecos = await response.json();
 
